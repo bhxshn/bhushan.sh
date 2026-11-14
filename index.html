@@ -51,15 +51,11 @@
       margin-top: 32px;
     }
 
-    .links p {
-      margin: 8px 0;
-    }
     :root {
       color-scheme: light dark;
       --bg: #ffffff;
       --text: #111827;
       --muted: #6b7280;
-      --card: #f3f4f6;
     }
 
     /* Dark Mode Overrides */
@@ -67,7 +63,6 @@
       --bg: #0f172a;
       --text: #e5e7eb;
       --muted: #9ca3af;
-      --card: #1e293b;
     }
 
     .toggle {
@@ -94,17 +89,16 @@
 </head>
 
 <body>
-  <button class="toggle" onclick="toggleTheme()"></button>
+  <button class="toggle" type="button" aria-label="Toggle color theme" onclick="toggleTheme()"></button>
   <main>
     <h1>Bhushan Dhumal</h1>
 
     <div class="links">
-      <p><a href="https://instagram.com/bhushandhumal" target="_blank">Instagram</a></p>
-      <!-- <p><a href="https://github.com/bhushandhumal" target="_blank">GitHub</a></p> -->
-      <!-- <p><a href="https://linkedin.com/in/bhushan-dhumal" target="_blank">LinkedIn</a></p> -->
-      <p><a href="https://x.com/bhxshn" target="_blank">Twitter</a></p>
-      <!-- <p><a href="https://youtube.com/@bhxshn" target="_blank">YouTube</a></p>
-      <p><a href="https://leetcode.com/bhushandhumal" target="_blank">LeetCode</a></p> -->
+      <a href="https://github.com/bhushandhumal" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span aria-hidden="true"> · </span>
+      <a href="https://leetcode.com/bhushandhumal" target="_blank" rel="noopener noreferrer">LeetCode</a>
+      <span aria-hidden="true"> · </span>
+      <a href="https://x.com/bhxshn" target="_blank" rel="noopener noreferrer">X</a>
     </div>
   </main>
 
